@@ -5,7 +5,7 @@ const Categories = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>CategoriesScreen</Text>
-            <Button title="Go to Bread" onPress={() => navigation.navigate("Bread")} />
+            <Button title="Ir a Panaderia" onPress={() => navigation.navigate("Bread")} />
         </View>
     )
 }

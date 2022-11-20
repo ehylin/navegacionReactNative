@@ -3,10 +3,23 @@ import React from 'react'
 
 function About() {
     return (
-        <View >
-            <Text >Nosotros</Text>
+        <View style={styles.container}>
+            <Text style={styles.title}>Nosotros</Text>
         </View>
     )
 }
 
 export default About
+
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: "#F7A4A4",
+        alignItems: "center",
+        justifyContent: "center",
+    },
+    title: {
+        fontFamily: "Kanit",
+    },
+})

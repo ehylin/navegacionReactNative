@@ -5,7 +5,7 @@ export default function Home({ navigation }) {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Bienvenidos panaderia react native</Text>
-            <Button title="Go to Categories" onPress={() => navigation.navigate("Categories")} />
+            <Button title="Ir a Categorias" onPress={() => navigation.navigate("Categories")} />
         </View>
     )
 }

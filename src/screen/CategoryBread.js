@@ -6,7 +6,7 @@ const CategoryBread = ({ navigation }) => {
         <View style={styles.container}>
             <Text style={styles.title}>Category Bread Screen</Text>
             <Button
-                title="Go to Details"
+                title="Ir a detalles"
                 onPress={() => navigation.navigate("Details")}
             />
         </View>
