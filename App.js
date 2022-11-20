@@ -1,13 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { useFonts } from 'expo-font';
+import ShopNavigate from './src/navigation/ShopNavigate';
+
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+
+  const [fontsLouded] = useFonts({
+    Kanit: require('./src/assets/fonts/Kanit-Black.ttf')
+  })
+
+  if (!fontsLouded) {
+    return null;
+  }
+
+  return <ShopNavigate />
 }
 
 const styles = StyleSheet.create({
