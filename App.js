@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { useFonts } from 'expo-font';
 import ShopNavigate from './src/navigation/ShopNavigate';
-
+import BottomTabNavigator from "./src/navigation/BottomTabNavigator"
 
 export default function App() {
 
@@ -14,7 +14,7 @@ export default function App() {
     return null;
   }
 
-  return <ShopNavigate />
+  return <BottomTabNavigator />
 }
 
 const styles = StyleSheet.create({

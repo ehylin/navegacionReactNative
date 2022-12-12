@@ -4,7 +4,7 @@ import React from 'react'
 function About() {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Nosotros ejemplo</Text>
+            <Text style={styles.title}>Nosotros</Text>
         </View>
     )
 }
