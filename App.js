@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { useFonts } from 'expo-font';
+import { Provider } from "react-redux";
+import store from "./src/store"
 import ShopNavigate from './src/navigation/ShopNavigate';
 import BottomTabNavigator from "./src/navigation/BottomTabNavigator"
 
@@ -14,14 +16,10 @@ export default function App() {
     return null;
   }
 
-  return <BottomTabNavigator />
+  return (
+    <Provider store={store}>
+      <BottomTabNavigator />
+    </Provider>
+  );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
